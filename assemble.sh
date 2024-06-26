@@ -5,7 +5,7 @@ source=$(realpath "$1")
 dir=$(dirname "$source")
 name=$(basename "$source" | cut -d"." -f1 )
 
-cd $script_dir
+cd "$script_dir"
 
 if ! [ -f "$source" ]; then
     echo "Path invalid"

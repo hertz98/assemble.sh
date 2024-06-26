@@ -3,7 +3,7 @@
 script_dir=$(dirname -- "$0")
 source=$(realpath "$1")
 
-cd $script_dir
+cd "$script_dir"
 
 if ! [ -f "$source" ]; then
     echo "Path invalid"
